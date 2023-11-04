@@ -1,0 +1,54 @@
+  <div class="imagem-container">
+  <img class="padrao"
+    *ngFor="let imagem of imagens; index as i"
+    [src]="imagem"
+    width="100%" height="100%" [class.opacity]="i !== indexImagemAtiva"
+
+  />
+    <div class="botoes-controle">
+      <button
+      *ngFor="let imagem of imagens; index as i" 
+      [class.ativo]="i === indexImagemAtiva" 
+      (click)="pararTimer(); ativarImagem(i)"></button>
+    </div>
+  </div>
+
+<!-- Botões de controle -->
+  
+
+<div class="quem_somos">
+  <div class="imagem_home_quem_somos">
+    <img mat-card-image src="../../../../assets/home_quem_somos.png" style="overflow: hidden" alt="quem somos?">
+  </div>
+    <div class="texto_home_quem_somos">
+      <h2>A Cota Transportes</h2>
+      <p>
+        &nbsp;&nbsp;&nbsp;Uma parceira confiável para soluções de transporte e logística de classe. Fundada com um compromisso inabalável com a excelência, nossa empresa tem se destacado no setor de transporte há mais de...
+      </p>
+      <button mat-button (click)="quemSomos()">Saiba mais...</button>
+    </div>
+</div>
+<div class="servicos">
+  <div class="servicos_texto">
+    <h2>Nosso Serviços</h2>
+    <p>
+      &nbsp;&nbsp;&nbsp;Oferecemos transporte terrestre de cargas para atender a uma ampla variedade de indústrias, desde pequenos envios até grandes remessas industriais...
+    </p>
+    <img mat-card-image class="imagem_servico_1"  src="../../../../assets/tipo_servico.png" style="overflow: hidden" alt="servico">
+    <button mat-button (click)="servicos()">Saiba mais...</button>
+  </div>
+  <div class="imagem_servicos">
+    <img mat-card-image  src="../../../../assets/servico.png" style="overflow: hidden" alt="servico">
+  </div>
+</div>
+<div class="mapa">
+  <div class="mapa_texto">
+    <h2>Regiões atendidas</h2>
+    <p>
+      &nbsp;&nbsp;&nbsp;Oferecemos eficiência e rapidez, mantendo a excelência na entrega com qualidade. Atendemos  as regiões de Rio Grande do Sul, Litoral de Santa Catarina, Curitiba, São Paulo e Rio de Janeiro.
+    </p>
+  </div>
+  <div class="imagem_mapa">
+    <img mat-card-image  src="../../../../assets/mapa.png" style="overflow: hidden" alt="quem somos?">
+  </div>
+</div>

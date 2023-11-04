@@ -1,0 +1,41 @@
+
+<div class="content" *ngIf="!carregaPagina; else loading">
+  <div class="servico3">
+    <img mat-card-image  src="../../../../assets/serviço_4.png" style="overflow: hidden" alt="servico">
+  </div>
+    <div class="servicos_2">
+      <div class="imagem_servicos">
+        <img mat-card-image  src="../../../../assets/serviços_2.png" style="overflow: hidden" alt="servico">
+      </div>
+      <div class="servicos_texto">
+          <h2>Nosso Serviços</h2>
+          <p>
+            <strong> Transporte de Cargas: </strong>&nbsp;&nbsp;&nbsp;Oferecemos transporte terrestre de cargas para atender a uma ampla variedade de indústrias, desde pequenos envios até grandes remessas industriais.<br/><br/>
+           <strong> Logística Integrada: </strong>
+            &nbsp;&nbsp;&nbsp;Nossa equipe especializada em logística cria soluções personalizadas para otimizar a cadeia de suprimentos dos nossos clientes, economizando tempo e dinheiro.<br/><br/>
+          <strong> Entregas Rápidas: </strong>&nbsp;&nbsp;&nbsp;Oferecemos serviços de entrega expressa para atender às necessidades de entregas urgentes, garantindo que seus produtos cheguem ao destino final com rapidez e segurança.<br/><br/>
+           <strong> Armazenagem e Distribuição: </strong> &nbsp;&nbsp;&nbsp; Contamos com instalações de armazenamento modernas e seguras para atender às necessidades de estocagem e distribuição de nossos clientes.<br/><br/>
+           <strong>Segurança:</strong> &nbsp;&nbsp;&nbsp;Nossos caminhões contam com monitoramento de rastreadores via satélite, seguros de carga e contra terceiros, respeitando assim os padrões de segurança em transporte.
+          </p>
+        </div>
+    </div>
+    <div class="servicos">
+      <div class="servicos_texto">
+        <h2>Por que escolher a Cota Transportes?</h2>
+        <p>
+          <strong>Confiabilidade: </strong>&nbsp;&nbsp;&nbsp;Temos um histórico comprovado de entrega pontual e segura, construído ao longo de anos de operações.<br/><br/>
+          <strong>Equipe Profissional:</strong> &nbsp;&nbsp;&nbsp;Nossa equipe dedicada e altamente treinada está pronta para fornecer assistência personalizada e soluções sob medida para suas necessidades logísticas.<br/><br/>
+          <strong>Atendimento ao Cliente Excepcional: </strong>&nbsp;&nbsp;&nbsp;A satisfação do cliente é nossa prioridade, e estamos disponíveis 24 horas por dia, 7 dias por semana, para atender às suas necessidades.<br/><br/><br/>
+          &nbsp;&nbsp;&nbsp;Entre em Contato Conosco, queremos ser seu parceiro de confiança para todas as suas necessidades de transporte e logística. 
+        </p>
+      </div>
+      <div class="imagem_servicos">
+        <img mat-card-image  src="../../../../assets/serviços_1.png" style="overflow: hidden" alt="servico">
+      </div>
+    </div>
+</div>
+<ng-template #loading>
+  <div class="spinner">
+    <mat-spinner color="warn"></mat-spinner>
+  </div>
+</ng-template>

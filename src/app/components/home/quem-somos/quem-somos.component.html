@@ -1,0 +1,28 @@
+<div class="quem_somos" *ngIf="!carregaPagina; else loading">
+  <div class="alinhamento">
+    <div class="texto_home_quem_somos">
+      <h2>A Cota Transportes...</h2>
+      <p>
+        &nbsp;&nbsp;&nbsp;É sua parceira confiável para soluções de transporte e logística de classe. Fundada com um compromisso inabalável com a excelência, nossa empresa tem se destacado no setor de transporte há mais de 6 anos.<br/><br/>
+        Acumulamos conhecimento e expertise para lidar com qualquer desafio logístico. Cada membro de nossa equipe é dedicado a proporcionar o melhor serviço possível.
+      </p>
+    </div>
+    <div class="imagem_home_quem_somos">
+      <img src="../../../../assets/quem_somos_principal.png" alt="quem somos?">
+    </div>
+  </div>
+  <div class="segundo_paragrafo">
+    <p>
+      &nbsp;&nbsp;&nbsp;<strong>Nossa Missão</strong>  é simplificar o transporte e a logística para nossos clientes, oferecendo soluções sob medida que atendam às suas necessidades únicas.
+
+    </p>
+  </div>
+  <div class="quem_somos_2">
+    <img src="../../../../assets/quem_somos_2.png" alt="quem somos">
+  </div>
+</div>
+<ng-template #loading>
+  <div class="spinner">
+    <mat-spinner color="warn"></mat-spinner>
+  </div>
+</ng-template>

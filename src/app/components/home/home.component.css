@@ -1,0 +1,129 @@
+mat-toolbar{
+    background-color: #313B59;
+    margin-top: 30px;
+    width: 40%;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    border-bottom-left-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.green-color {
+    color:green;
+}
+
+.button_cotacao{
+    width: 150px!important;
+    height: 40px;
+    background-color: #d96236;
+    color: #f2f2f2!important;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.texto_toolbar{
+    font-size: 12px;
+    color: #f2f2f2;
+    padding-right: 5px;
+}
+.cotacao_texto{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+.cotacao_texto mat-icon{
+    height: auto;
+    padding-right: 30px;
+    font-size: 35px;
+    color: #f2f2f2;
+}
+.espacamento{
+    padding-bottom: 0px;
+}
+.menu-div{
+    margin-top: 20px;
+    width: 100%;
+    height: 50px!important;
+}
+.menu-card{
+    height: 50px!important;
+    background-color: #d96236;
+    box-shadow: 4px 4px 8px 1px #595656;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.menu-card button{
+    width: 130px;
+    height: 50px;
+    color: #f2f2f2;
+    background-color: #d96236;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    border: 3px solid #d96236!important;
+    justify-content: center;
+    cursor: pointer;
+}
+.menu-card button:hover{
+    background-color: #313B59;
+    border: 3px solid #313B59;   
+}
+.conteudo{
+    z-index: 2;
+    top: -1px;
+}
+
+@media screen and (max-width: 1250px) {
+    .cotacao_texto {
+      display: none;
+    }
+    mat-toolbar{
+        background-color: #ffffff;
+        display: flex;
+        justify-content: center;
+    }
+    .menu-card{
+        display: flex!important;
+        justify-content: center!important;
+    }
+    .menu-card mat-icon{
+        display: flex;
+        margin-right: 0px;
+        font-size: 50px;
+        width: 50px!important;
+        height: 50px;
+        margin-right: 10px;
+        color: #f2f2f2;
+    }
+    .menu-card mat-icon:hover{
+        cursor: pointer;
+        color: #313B59;
+    }
+
+    .mat-mdc-menu-panel {
+        background-color: #d96236!important;
+      }
+    .mat-menu-item:hover{
+        background-color: #313B59!important;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .container_cabecalho .logo{
+        width: 150px!important;
+    }
+    
+    .container_cabecalho{
+        font-size: 14px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+  }

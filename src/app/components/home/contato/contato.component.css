@@ -1,0 +1,152 @@
+.conteiner{
+  display: flex;
+  width: 80%;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: auto;
+}
+.contato-container h1{
+  text-align: center;
+}
+mat-card{
+    width: 50%;
+    height: 80%;
+    margin: 20px;
+    background-color: #f2f2f2;
+    box-shadow: #d96236 0px 5px 15px!important;
+}
+.contato-container {
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 10%;
+  }
+  
+  h1 {
+    font-size: 24px;
+    color: #808090;
+  }
+  
+  h2 {
+    font-size: 20px;
+    color: #808090;
+    margin-top: 20px;
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #808090;
+  }
+  
+  address {
+    font-style: normal;
+    font-size: 16px;
+    color: #808090;
+  }
+  
+  .contato div{
+    display: flex;
+    align-items: center;
+  }
+  mat-icon{
+    width: 25px;
+    height: 25px;
+    color: #d96236;
+  }
+.google_maps{
+  width: 50%;
+  height: 80%;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  box-shadow: #d96236 0px 5px 15px!important;
+}
+.spinner{
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 80%;
+  z-index: 1;
+}
+button{
+  width: 150px!important;
+  height: 40px;
+  background-color: #d96236;
+  color: #f2f2f2!important;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.contato div{
+  color: #808090;
+}
+
+.contato .link a{
+  text-decoration: none;
+  color: #808090;
+  padding-left: 5px;
+}
+.contato .link a:hover{
+  color: #d96236;
+}
+
+@media screen and (max-width: 1050px) {
+  .conteiner{
+    display: block;
+    width: 100%;
+    margin: auto;
+  }
+  mat-card, .google_maps{
+    width: 90%;
+    display: flex;
+    margin: auto;
+    margin-top: 40px;
+  }
+  
+}
+@media screen and (max-width: 600px) {
+  .conteiner{
+    width: 98%;
+  }
+  mat-card, .google_maps{
+    width: 90%;
+  }
+  .contato-container{
+    width: 90%!important;
+  }
+  h1 {
+    font-size: 16px;
+    color: #808090;
+  }
+  
+  h2 {
+    font-size: 12px;
+    color: #808090;
+    margin-top: 20px;
+  }
+  
+  p {
+    font-size: 12px;
+    line-height: 1.5;
+    color: #999;
+  }
+  
+  address {
+    font-style: normal;
+    font-size: 12px;
+    color: #808090;
+  }
+  .contato{
+    font-size: 10px;
+  }
+
+  .google_maps{
+    margin-bottom: 40px;
+  }
+
+}

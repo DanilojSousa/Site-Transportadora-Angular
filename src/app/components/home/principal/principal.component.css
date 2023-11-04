@@ -1,0 +1,194 @@
+.imagem-container img {
+  top: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 0.3s ease-in-out; 
+}
+
+.imagem-container .opacity {
+  display: none;
+}
+
+.botoes-controle {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: -40px;
+  margin-bottom: 30px;
+}
+
+.botoes-controle button {
+  background: #ccc;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+}
+
+.botoes-controle button.ativo {
+  background: #ff0000;
+  cursor: default;
+}
+  .quem_somos{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .texto_home_quem_somos, .mapa_texto, .servicos_texto   {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    font-size: 16px;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+  }
+  .texto_home_quem_somos p{
+    width: 60%;
+    font-size: 16px;
+    text-align: left;
+    color: #808090;
+    margin-bottom: 40px;
+  }
+
+  .texto_home_quem_somos h2{
+    display: flex;
+    justify-content: center;
+    color: #ff0000;
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+
+  button{
+    float: right;
+    width: 150px;
+    height: 40px;
+    background-color: #d96236;
+    color: #f2f2f2!important;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: #d96236;
+    cursor: pointer!important;
+  }
+
+  .imagem_home_quem_somos{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .servicos{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #f2f2f2;
+  }
+  
+  .servicos_texto p{
+    width: 60%;
+    font-size: 100%;
+    text-align: left;
+    color: #808090;
+    display: flex;
+    flex-wrap: wrap; 
+  }
+
+  .servicos_texto h2{
+    display: flex;
+    justify-content: center;
+    color: #ff0000;
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+
+  .imagem_servicos{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .imagem_servico_1{
+    width: 100%;
+    height: 100%;
+  }
+  .servicos_texto button{
+    float: right;
+  }
+  
+  .mapa{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .mapa_texto p{
+    width: 60%;
+    text-align: left;
+    color: #808090;
+    
+  }
+  .imagem_mapa{
+    width: 100%;
+    height: 100%;
+  }
+
+  .mapa_texto h2{
+    display: flex;
+    justify-content: center;
+    color: #ff0000;
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+  @media screen and (max-width: 1050px) {
+    .quem_somos, .mapa, .servicos {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    .imagem_home_quem_somos, .imagem_servicos, .imagem_mapa{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    .texto_home_quem_somos{
+      display: flex;
+      margin: auto;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 50px;
+      width: 100%;
+    }
+
+    .texto_home_quem_somos h2, .servicos_texto h2, .mapa_texto h2{
+      font-size: 25px;
+    }
+
+    .servicos_texto, .mapa_texto{
+      padding-top: 50px;
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+       
+    }
+    
+    .botoes-controle {
+      margin-top: -20px;
+      margin-bottom: 10px;
+    }
+    p{
+      margin: auto;
+      width: 80%!important;
+    }
+ 
+  }

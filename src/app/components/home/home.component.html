@@ -1,0 +1,37 @@
+<div class="container_cabecalho">
+    <img class="logo" src="../../../assets/logo.png" alt="Descrição da imagem" style="width: 220px; height: 100px;">
+    <mat-toolbar>
+
+        <div class="cotacao_texto">
+          <mat-icon>local_shipping</mat-icon><Span class="texto_toolbar espacamento">FAÇA AGORA SUA COTAÇÃO ONLINE</Span>
+        </div>
+        <div class="button_cotacao">
+          <button mat-button routerLink="cotacao">
+            Consultar
+          </button>
+      </div>
+
+      </mat-toolbar>
+</div>
+<div class="menu_div">
+  <mat-card class="menu-card" *ngIf="!isSmallScreen">
+    <button mat-menu-item routerLink="inicio">Inicio</button>
+    <button mat-menu-item routerLink="servicos">Serviços</button>
+    <button mat-menu-item routerLink="quemSomos">Quem Somos</button>
+    <button mat-menu-item routerLink="lgpd">LGPD</button>
+    <button mat-menu-item routerLink="contato">Contato</button>
+  </mat-card>
+  <mat-card class="menu-card" *ngIf="isSmallScreen">
+    <button mat-menu-item class="button" routerLink="inicio">Inicio</button>
+    <button mat-menu-item class="button" routerLink="contato">Contato</button>
+    <mat-icon mat-button [matMenuTriggerFor]="menu">menu</mat-icon>
+    <mat-menu class="mat-menu" #menu="matMenu">
+      <button mat-menu-item class="button" routerLink="quemSomos">Quem Somos</button>
+      <button mat-menu-item class="button" routerLink="servicos">Serviços</button>
+      <button mat-menu-item class="button" routerLink="lgpd">LGPD</button>
+    </mat-menu>
+  </mat-card>
+</div>
+<div class="conteudo">
+  <router-outlet></router-outlet>
+</div>
